@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellinator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Yellinator</h1>
+        <p>Upload a file to yell at it!</p>
+        <label for="fileInput" class="file-label">Choose a file</label>
+        <input type="file" id="fileInput" accept="image/*">
+        <button id="processButton">Yell!</button>
+        <div>
+            <canvas id="resultCanvas" style="max-width: 100%; margin-top: 20px;"></canvas>
+        </div>
+        <button id="downloadButton" style="display: none; margin-top: 10px;">Download Result</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

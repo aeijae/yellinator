@@ -1,0 +1,92 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffff99;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #ff6b6b;
+    font-size: 3em;
+    text-shadow: 2px 2px #feca57;
+}
+
+p {
+    color: #48dbfb;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label.file-label {
+    background-color: #54a0ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+label.file-label:hover {
+    background-color: #2e86de;
+}
+
+#processButton {
+    background-color: #ff9ff3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#processButton:hover {
+    transform: scale(1.1);
+    background-color: #f368e0;
+}
+
+#processButton:active {
+    transform: scale(0.9);
+}
+
+#downloadButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    display: block;
+    margin: 20px auto 0;
+}
+
+#downloadButton:hover {
+    transform: scale(1.1);
+    background-color: #45a049;
+}
+
+#resultCanvas {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 20px auto 0;
+}
