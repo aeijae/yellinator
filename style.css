@@ -46,7 +46,7 @@ label.file-label:hover {
     background-color: #2e86de;
 }
 
-#processButton {
+#processButton, #downloadButton {
     background-color: #ff9ff3;
     color: white;
     border: none;
@@ -55,38 +55,30 @@ label.file-label:hover {
     border-radius: 25px;
     cursor: pointer;
     transition: transform 0.3s, background-color 0.3s;
+    margin: 10px auto;
+    display: block;
 }
 
-#processButton:hover {
+#processButton:hover, #downloadButton:hover {
     transform: scale(1.1);
     background-color: #f368e0;
 }
 
-#processButton:active {
+#processButton:active, #downloadButton:active {
     transform: scale(0.9);
 }
 
 #downloadButton {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
-    display: block;
-    margin: 20px auto 0;
+    background-color: #54a0ff;
 }
 
 #downloadButton:hover {
-    transform: scale(1.1);
-    background-color: #45a049;
+    background-color: #2e86de;
 }
 
 #resultCanvas {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     display: block;
-    margin: 20px auto 0;
+    margin: 20px auto;
 }

@@ -4,8 +4,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const downloadButton = document.getElementById('downloadButton');
     const canvas = document.getElementById('resultCanvas');
     const ctx = canvas.getContext('2d');
+    const fileNameDisplay = document.getElementById('fileName');
 
     let uploadedFileName = '';
+
+    fileInput.addEventListener('change', (event) => {
+        if (event.target.files.length > 0) {
+            uploadedFileName = event.target.files[0].name;
+            fileNameDisplay.textContent = uploadedFileName;
+        } else {
+            fileNameDisplay.textContent = '';
+        }
+    });
 
     processButton.addEventListener('click', () => {
         if (fileInput.files.length > 0) {

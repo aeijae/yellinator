@@ -9,14 +9,17 @@
 <body>
     <div class="container">
         <h1>Yellinator</h1>
-        <p>Upload an image file to yell at it!</p>
-        <label for="fileInput" class="file-label">Choose a file</label>
-        <input type="file" id="fileInput" accept="image/*">
-        <button id="processButton">Yell!</button>
-        <div>
-            <canvas id="resultCanvas" style="max-width: 100%; margin-top: 20px;"></canvas>
+        <p>Upload a file to yell at it!</p>
+        <div class="file-input-container">
+            <label for="fileInput" class="file-label">Choose a file</label>
+            <input type="file" id="fileInput" accept="image/*">
+            <span id="fileName"></span>
         </div>
-        <button id="downloadButton" style="display: none; margin-top: 10px;">Download Result</button>
+        <button id="processButton">Yell!</button>
+        <div class="canvas-container">
+            <canvas id="resultCanvas"></canvas>
+        </div>
+        <button id="downloadButton" style="display: none;">Download Result</button>
     </div>
     <script src="script.js"></script>
 </body>
